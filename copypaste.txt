@@ -1,0 +1,51 @@
+ssh -Y gabrierg@login.astro.uio.no
+ssh -XY gabrierg@tsih.uio.no
+ssh -Y hamal
+ssh -Y abel
+ssh -Y beehive47
+ssh -X hadar
+MeganPoptart1909!!
+
+module avail
+module load python/3.6
+module load Intel_parallel_studio/2018/3.051
+module load Intel_composer_xe/2017/1.132
+module list
+
+cd /mn/stornext/d17/extragalactic/personal/gabrierg/analysis/;ls
+
+/mn/stornext/d17/extragalactic/personal/shens/Eris_AHF/
+
+————————————————————————————————————
+For UiO to Mac:
+scp gabrierg@login.astro.uio.no:./Desktop/thesis_code/name.file ./Desktop/Masters/UiO/Thesis/code/name.file
+
+For advisors to mine:
+cp -a /mn/stornext/d17/extragalactic/personal/shens/Eris_AHF/runahf.sh /mn/stornext/d17/extragalactic/personal/gabrierg/analysis/
+
+For mine to mine:
+cp -a ~/Desktop/thesis_code/analysis/idl_hyades/pickstars.pro ~/Desktop/thesis_code/trial_run
+
+scp gabrierg@login.astro.uio.no:/mn/stornext/d17/extragalactic/personal/gabrierg/rprocess_halos/output.00380.ord_sml_test ./Desktop/Masters/UiO/Thesis/code/
+
+scp gabrierg@tsih.uio.no:/mn/stornext/d17/extragalactic/personal/gabrierg/rprocess_halos/*_128 ./Desktop/Masters/UiO/Thesis/code/current_code/10-29-2019/
+
+
+
+;age_EuFe                                                                                                                                   
+binning, tform_host, EuFe_host_per, seu_host, logtmin, logtmax, nbins, logtbins, median_EuFe_age_85, percent_up_EuFe_age_85, percent_down_EuFe_age_85, number85, /log, /nozero
+
+;age_EuFe_sat                                                                                                                               
+binning, tform_sat, EuFe_sat_per, seu_sat, logtmin, logtmax, nbins, logtbins, median_EuFe_age_sat_85, percent_up_EuFe_age_sat_85, percent_down_EuFe_age_sat_85, numbers85, /log, /nozero
+
+;FeH_EuF                                                                                                                                    
+binning, FeH_host, EuFe_host_per, seu_host, zmin, zmax, nzbins, zbins, median_EuFe_85, percent_up_EuFe_85, percent_down_EuFe_85, number185,/nozero
+
+;FeH_EuFe_sa                                                                                                                                
+binning, FeH_sat, EuFe_sat_per, seu_sat, zmin, zmax, nzbins, zbins, median_EuFe_sat_85, percent_up_EuFe_sat_85, percent_down_EuFe_sat_85, number1s85, /nozero
+
+
+
+
+
+

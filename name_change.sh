@@ -1,5 +1,5 @@
 #!/bin/tcsh -m
-foreach iz(`seq 1 1 40`)    #loop (start inc end)
+foreach iz(`seq 1 1 400`)    #loop (start inc end)
 #foreach iz(400)
 
 set step=`printf "%05d\n" $iz`                                            #which sim
@@ -19,8 +19,9 @@ set step=`printf "%05d\n" $iz`                                            #which
 
 #mv output.$step.sid_merger_0p05 /mn/stornext/d17/extragalactic/personal/gabrierg/rprocess/output.$step.sid_merger_0p05
 
-cp -a /mn/stornext/d17/extragalactic/personal/shens/Eris_AHF/L90Mpc8000_hithres.$step.* /mn/stornext/d17/extragalactic/personal/gabrierg/Eris_AHF/
+#cp -a /mn/stornext/d17/extragalactic/personal/shens/Eris_AHF/L90Mpc8000_hithres.$step.* /mn/stornext/d17/extragalactic/personal/gabrierg/Eris_AHF/
 
+cp -a /mn/stornext/u3/shens/scratch/Eris_data/L90Mpc8000_hithres.$step /mn/stornext/d17/extragalactic/personal/gabrierg/Eris_AHF/
 
 end
 exit
